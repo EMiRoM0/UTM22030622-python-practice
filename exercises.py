@@ -15,3 +15,11 @@ for i in range(element):
 print("The list has been uptdated!")
 for element in list:
     print(element)
+#Now we create a tuple with only 7 elements and a message to present the tuple.
+tuple = (15, 30, 45, 60, 75, 90, 105)
+#While the index is lower than the elements that have been read of tuple it won't end.
+index = 0
+while index < len(tuple):
+#Now print the elements 
+    print(tuple[index])
+    index + = 1
