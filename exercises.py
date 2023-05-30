@@ -37,4 +37,41 @@ print("Final data:")
 print("Name:", name)
 print("Nationality:", nationality)
 print("Age:", age)
-
+#Now, thanks to the import math we can do this exercise.
+#This exercise allows us to perform operations such as adding, subtracting, dividing and multiplying.
+#First we define our function to do the operations.
+def operation(operating, frstnum, secnum):
+#Now with if cycles let's make the selection of operations to perform.
+if operating == "+":
+result = frstnum+secnum
+elif operating == "-":
+result = frstnum-secnum
+elif operating == "*":
+reuslt = frstnum*secnum
+elif operating == "/":
+#Here we try to verify that the divisor is not zero to avoid errors.
+if secnum !=0:
+result = frstnum/secnum
+#If you put a zero in frstnum or secnum this will happen
+else:
+print("You can't divide with a zero!")
+return None
+else:
+print("Error, operating invalid")
+return None
+#Now we print the result in this specific scenario
+return result
+#Now we begin to insert the indicated actions to perform the operations.
+while True:
+operating = input("Insert the operation (+,-,/,*)")
+frstnum = int(input("Insert your first number"))
+secnum = int(input("Insert your second number"))
+#After entering the necesary data it will show the final result.
+result = operation(operating, frstnum, secnum)
+if result is not None:
+print("The result is:", result)
+#Then an option to repeat the exercise of the operation or cancel the repetition.
+continue = input("Do you want to do another operation? y/n")
+if continue.lower() !="y":
+break
+#End of the code.
