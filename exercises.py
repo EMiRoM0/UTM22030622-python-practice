@@ -87,5 +87,3 @@ while True:
     # Then an option to repeat the exercise of the operation or cancel the repetition.
     repeat = input("Do you want to do another operation? (y/n): ")
     if repeat.lower() != "y":
-
-#End of the code.
